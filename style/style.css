@@ -1,0 +1,209 @@
+@charset "UTF-8";
+@import url(Reset/reset.css);
+
+/* div#wrap 시작 */
+div#wrap {
+  width: 1200px;
+  height: 700px;
+  margin: 0 auto;
+  border: 1px solid #000;
+}
+/* div#wrap 끝 */
+
+/* header#header 시작*/
+header#header {
+  height: 100px;
+  /*border: 1px solid #f00;*/
+  justify-content: space-between;
+}
+#header > #headerLogo {
+  /*border: 1px solid #f0f;*/
+  height: 100px;
+  line-height: 100px;
+  vertical-align: middle;
+}
+
+/* gnb 시작 */
+div#gnb {
+  width: 100%;
+}
+#gnb #mainGNB {
+  padding: 30px;
+  justify-content: flex-end;
+  /*border: 1px solid #000;*/
+}
+
+#gnb ul#mainGNB li.mainLi:hover > a,
+#gnb .subLi:hover {
+  color: #fff;
+  background-color: rgb(226, 133, 130);
+}
+#gnb ul#mainGNB li.mainLi a {
+  width: 150px;
+  text-align: center;
+  padding: 10px 20px;
+  display: inline-block;
+}
+#gnb #mainGNB .subMenu {
+  display: none;
+  position: relative;
+  background-color: #fff;
+  z-index: 10;
+}
+/* gnb 끝 */
+/* header#header 끝 */
+
+/* div#slide 시작 */
+div#slide {
+  /*border: 1px solid #000;*/
+  height: 300px;
+  overflow: hidden;
+}
+#slide div#slideFrame {
+  height: 300px;
+  /*border: 1px solid #f00;*/
+}
+#slide div#slideFrame a {
+  height: 300px;
+  display: inline-block;
+  position: relative;
+}
+#slide div#slideFrame a span {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid #000;
+  font-size: 24px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+/* div#slide 끝 */
+
+/* div#contents 시작 */
+div#contents {
+  padding-top: 5px;
+  height: 200px;
+  justify-content: space-around;
+  /*border: 1px solid #000;*/
+}
+#contents > div {
+  width: 400px;
+  height: 200px;
+  /*border: 1px solid #000;*/
+}
+#contents #bbs {
+  padding: 4px;
+}
+#contents #bbs > div {
+  border: 1px solid #aaa;
+}
+#contents #bbs .tabBtn {
+  font-size: 18px;
+  border: 1px solid #aaa;
+  padding: 5px 10px;
+  cursor: pointer;
+
+  position: relative;
+  top: 1px;
+}
+#contents #bbs .tabBtn:first-child {
+  left: 6px;
+  background-color: #fff;
+  border-bottom-color: #fff;
+}
+#contents #bbs #gallery {
+  display: none;
+}
+#contents #bbs #notice,
+#contents #bbs #gallery {
+  padding: 4px;
+  border: 1px solid #aaa;
+}
+#contents #bbs #notice table,
+#contents #bbs #gallery table {
+  width: 100%;
+}
+#contents #bbs #notice table {
+  line-height: 33px;
+}
+#contents #bbs #gallery table {
+  line-height: 30px;
+}
+#contents #bbs #gallery table tr td {
+  height: 140px;
+  text-align: center;
+}
+#contents #bbs #notice table tr:first-child {
+  cursor: pointer;
+}
+#contents #banner {
+  text-align: center;
+}
+#contents #shortcut {
+  text-align: center;
+}
+/* div#contents 끝 */
+
+/* footer#footer 시작 */
+footer#footer {
+  /*border: 1px solid #000;*/
+  height: 100px;
+}
+#footer #footerLogo {
+  height: 100px;
+  line-height: 100px;
+}
+#footer #copyright {
+  text-align: center;
+  line-height: 100px;
+
+  -webkit-flex: 1px;
+  -moz-flex: 1px;
+  -ms-flex: 1px;
+  -o-flex: 1px;
+  flex: 1px;
+}
+#footer #sns {
+  width: 200px;
+  line-height: 100px;
+  text-align: center;
+}
+/* footer#footer 끝 */
+
+/* layerPop 시작 */
+div#layerPop {
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+}
+#layerPop #layerContents {
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 30px;
+  border: 1px solid #000;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+#layerPop #layerContents h2 {
+  padding: 10px 0;
+}
+#layerPop #layerContents p {
+  line-height: 26px;
+  margin-bottom: 20px;
+}
+#layerPop #layerContents #popBtn {
+  font-size: 18px;
+  padding: 5px 10px;
+  float: right;
+  cursor: pointer;
+}
+/* layerPop 끝 */
